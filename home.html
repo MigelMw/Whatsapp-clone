@@ -14,12 +14,37 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
+    
+    
     <div class="homesec">
-        <div class="users" id="allusers">
-
+        <div class="users" >
+            <div class="navBar">
+                <div class="profileimg"></div>
+                <div id="theuser"></div>
+            </div>
+            <div class="notification"></div>
+            <div class="search">
+                <input type="text" class=" searchbar text-light"  placeholder="Search or start new chat" id="search">
+            </div>
+            <div id="allusers" ></div>
         </div>
         <div class="chats">
-    
+            <div class="navBar" >
+                <div style="color: white; font-size: 20px;">
+                    <div class="profileimg" style="position: absolute;"></div>
+                    <div id="name" style="margin-left:80px;"></div>
+                </div>
+            </div>
+            <div class="opacity">
+            </div>
+            <div class="chatsec">
+               
+                <div id="allmessages"></div>
+            </div>
+            <div class="input-group mb-3" style="display:flex ;">
+                <input type="text" id="messageinp" class="form-control" placeholder="Enter text" aria-label="Enter text" aria-describedby="button-addon2" style="height:8vh ;">
+                <button class="btn btn-success" type="button" id="button-addon2">Send</button>
+              </div>
         </div>
     </div>
 
